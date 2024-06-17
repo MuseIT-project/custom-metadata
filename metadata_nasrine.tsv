@@ -1,0 +1,149 @@
+This spreadsheet includes three tables. The first table outlines additional fields for the MuseIT schema. Please add or propose any necessary fields you may need. The second table presents the fields from the existing Dataverse citation schema. If a field you need is marked as 'hidden,' please change its status to 'optional.' Note: 'ArtFormType' is a controlled variable, and the options are listed in a third table. Please add any art form types that you need as well.							Comments	
+								
+							To keep things clear we could use the term Object to refer to transformations that are created in MuseIT; Original CA can refere to the original cultural asset that is being represented in different modalities by MuseIT. What do you think?	
+								
+								
+								
+	name	title	description	watermark	fieldType		Following ourdiscusion in WP3-WP6 meeting, I have replaced the references to Dataset with Object	
+Required	project	Project	Constant Value: MuseIT.	MuseIT	text			
+Required	artFormType	Art Form Type	The type of the Original Art Form. Eg. 3D, painting etc.		text			
+Required	ObjectVersion	Version	The version of the Object e.g. 2.1.		text			
+Optional	currentLocation	Current Location	The location where the object is displayed		text			
+Optional	material	Material	The material that the Object is made of		text			
+Optional	contributor	Contributor	The entity, such as a person or organization, responsible for collecting, managing, or otherwise contributing to the development of the Object		none			
+Optional	contributorType	Type	Indicates the type of contribution made to the Object		text			
+Optional	contributorName	Name	The name of the contributor, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text			
+Optional	accessibilityModality	Accessibility Modality	The sensory modality through which the cultural asset can be accessed.		text			
+Optional	datasetCopyright	Dataset Copyright	Copyright information for the Object.		text			
+Optional	fileCopyright	File Copyright	Copyright information for the specific Object.		text			
+								
+Optional	Author-Creator	Author-Creator	The entity, such as a person or organization who has created the Object (art work, artifact, document, music, etc)		text			
+Required	originalityStatus	Originality Status	Indicates whether the entry is the original CHA or a representation.		text			
+Optional	representationOfOriginalAsset	Representation of Original Asset	Specifies the original asset if the entry is a representation.		text		We would also need some of the above fields that describe the original art form, here too to describe our representation, e.g., Version 	
+								
+	name	title	description	watermark	fieldType			
+Required	title	Title	The main title of the Object		text			
+Optional	subtitle	Subtitle	A secondary title that amplifies or states certain limitations on the main title		text		this could be optional	
+Optional	alternativeTitle	Alternative Title	Either 1) a title commonly used to refer to the Dataset or 2) an abbreviation of the main title		text			
+Hidden	alternativeURL	Alternative URL	Another URL where one can view or access the data in the Dataset, e.g. a project or personal webpage	https://	url		Should there not be a URL? 	
+Optional	otherId	Other Identifier	Another unique identifier for the Dataset (e.g. producer's or another repository's identifier)		none			
+Optional	otherIdAgency	Agency	The name of the agency that generated the other identifier		text			
+Optional	otherIdValue	Identifier	Another identifier uniquely identifies the Dataset		text			
+Required	author	Author	The entity, e.g. a person or organization, that created the Object		none		What is the difference between these two fields, please modify the description for better clarification	
+Required	authorName	Name	The name of the author, such as the person's name or the name of an organization	1) Family Name, Given Name or 2) Organization XYZ	text			
+Optional	authorAffiliation	Affiliation	The name of the entity affiliated with the author, e.g. an organization's name	Organization XYZ	text			
+Optional	authorIdentifier	Identifier Type	Uniquely identifies the author when paired with an identifier type		text			
+Optional	authorIdentifierScheme	Identifier	The type of identifier that uniquely identifies the author (e.g. ORCID, ISNI)		text			
+Required	datasetContact	Point of Contact	The entity, such as a person or organization who has created the Object (art work, artifact, document, music, etc)		none		All field names here refer to dataset rather than object. Did I understand it correctly Slava that these field names cannot be changed? If not fine, but if it is possible to change their names we should use object here also for consistency.  I take it that "ds" [as in dsDescription] is short for dataset?	
+Optional	datasetContactName	Name	The name of the point of contact, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text			
+Optional	datasetContactAffiliation	Affiliation	The name of the entity affiliated with the point of contact, e.g. an organization's name	Organization XYZ	text			
+Required	datasetContactEmail	E-mail	The point of contact's email address	name@email.xyz	email			
+Required	dsDescription	Description	A summary describing the purpose, nature, and scope of the Object		none			What is the difference between these two fields, please modify the description for better clarification
+Required	dsDescriptionValue	Text	A summary describing the purpose, nature, and scope of the Object		textbox			
+Optional	dsDescriptionDate	Date	The date when the description was added to the Object. If the Object contains more than one description, e.g. the data producer supplied one description and the data repository supplied another, this date is used to distinguish between the descriptions	YYYY-MM-DD	date			Even other dates are imortant and should be added (e.g., Object creation Date, Object publication Date, Object modification Date)
+Required	subject	Subject	The area of study relevant to the Object		text			
+Required	keyword	Keyword	A key term that describes an important aspect of the Object and information about any controlled vocabulary used		none			
+Required	keywordValue	Term	A key term that describes important aspects of the Object		text			
+Optional	keywordVocabulary	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text			
+Optional	keywordVocabularyURI	Controlled Vocabulary URL	The URL where one can access information about the term's controlled vocabulary	https://	url			
+Optional	topicClassification	Topic Classification	A summary describing the purpose, nature, and scope of the Object		none			
+Optional	topicClassValue	Term	A topic or subject term		text			
+Optional	topicClassVocab	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text			
+Optional	topicClassVocabURI	Controlled Vocabulary URL	The URL where one can access information about the term's controlled vocabulary	https://	url			
+Hidden	publication	Related Publication	A key term that describes important aspects of the Object		none			
+Hidden	publicationCitation	Citation	The full bibliographic citation for the related publication		textbox			
+Hidden	publicationIDType	Identifier Type	The type of identifier that uniquely identifies a related publication		text			
+Hidden	publicationIDNumber	Identifier	The identifier for a related publication		text			
+Hidden	publicationURL	URL	The URL form of the identifier entered in the Identifier field, e.g. the DOI URL if a DOI was entered in the Identifier field. Used to display what was entered in the ID Type and ID Number fields as a link. If what was entered in the Identifier field has no URL form, the URL of the publication webpage is used, e.g. a journal article webpage	https://	url			
+Hidden	notesText	Notes	Additional information about the Object		textbox			
+Optional	language	Language	A language that the Object's files is written in		text			
+Conditionally Required	producer	Producer	The entity, such a person or organization, managing the finances or other administrative processes involved in the creation of the Object		none			
+Conditionally Required	producerName	Name	The name of the entity, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text			
+Optional	producerAffiliation	Affiliation	The name of the entity affiliated with the producer, e.g. an organization's name	Organization XYZ	text			
+Optional	producerAbbreviation	Abbreviated Name	The producer's abbreviated name (e.g. IQSS, ICPSR)		text			
+Optional	producerURL	URL	The URL of the producer's website	https://	url			
+Optional	producerLogoURL	Logo URL	The URL of the producer's logo	https://	url			
+Optional	productionDate	Production Date	The date when the data were produced (not distributed, published, or archived)	YYYY-MM-DD	date			
+Optional	productionPlace	Production Location	The location where the data and any related materials were produced or collected		text			
+Optional	contributor	Contributor	The entity, such as a person or organization, responsible for collecting, managing, or otherwise contributing to the development of the Object		none		These optional fields should be marked with green colour	
+Optional	contributorType	Type	Indicates the type of contribution made to the dataset		text			
+Optional	contributorName	Name	The name of the contributor, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text			
+Hidden	grantNumber	Funding Information	Information about the Object's financial support		none			
+Hidden	grantNumberAgency	Agency	The agency that provided financial support for the Object	Organization XYZ	text			
+Hidden	grantNumberValue	Identifier	The grant identifier or contract identifier of the agency that provided financial support for the Object		text			
+Hidden	distributor	Distributor	The entity, such as a person or organization, designated to generate copies of the Object, including any editions or revisions		none			
+Hidden	distributorName	Name	The name of the entity, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text			
+Hidden	distributorAffiliation	Affiliation	The name of the entity affiliated with the distributor, e.g. an organization's name	Organization XYZ	text			
+Hidden	distributorAbbreviation	Abbreviated Name	The distributor's abbreviated name (e.g. IQSS, ICPSR)		text			
+Hidden	distributorURL	URL	The URL of the distributor's webpage	https://	url			
+Hidden	distributorLogoURL	Logo URL	The URL of the distributor's logo image, used to show the image on the Object's page	https://	url			
+Hidden	distributionDate	Distribution Date	The date when the Object was made available for distribution/presentation	YYYY-MM-DD	date			
+Optional	depositor	Depositor	The entity, such as a person or organization, that deposited the Object in the repository	1) FamilyName, GivenName or 2) Organization	text			
+Hidden	dateOfDeposit	Deposit Date	The date when the Object was deposited into the repository	YYYY-MM-DD	date		Date should also be optional	
+Hidden	timePeriodCovered	Time Period	The time period that the data refer to. Also known as span. This is the time period covered by the data, not the dates of coding, collecting data, or making documents machine-readable		none			
+Hidden	timePeriodCoveredStart	Start Date	The start date of the time period that the data refer to	YYYY-MM-DD	date			
+Hidden	timePeriodCoveredEnd	End Date	The end date of the time period that the data refer to	YYYY-MM-DD	date			
+Hidden	dateOfCollection	Date of Collection	The dates when the data were collected or generated		none			
+Hidden	dateOfCollectionStart	Start Date	The date when the data collection started	YYYY-MM-DD	date			
+Hidden	dateOfCollectionEnd	End Date	The date when the data collection ended	YYYY-MM-DD	date			
+Optional	kindOfData	Data Type	The type of data included in the files (e.g. survey data, clinical data, or machine-readable text)		text			
+Optional	series	Series	Information about the dataset series to which the Object belong		none			
+Optional	seriesName	Name	The name of the dataset series		text			
+Optional	seriesInformation	Information	Can include 1) a history of the series and 2) a summary of features that apply to the series		textbox			
+HIdden	software	Software	The date when the Object was deposited into the repository		none			
+HIdden	softwareName	Name	The name of software used to generate the Object		text			
+HIdden	softwareVersion	Version	The version of the software used to generate the Object, e.g. 4.11		text			
+HIdden	relatedMaterial	Related Material	Information, such as a persistent ID or citation, about the material related to the Object, such as appendices or sampling information available outside of the Object		textbox		Sould also be optional	
+HIdden	relatedObjects	Related Object	Information, such as a persistent ID or citation, about a related dataset, such as previous research on the Object's subject		textbox		Sould also be optional	
+HIdden	otherReferences	Other Reference	Information, such as a persistent ID or citation, about another type of resource that provides background or supporting material to the Object		text			
+HIdden	dataSources	Data Source	Information, such as a persistent ID or citation, about sources of the Object (e.g. a book, article, serial, or machine-readable data file)		textbox		Sould also be optional	
+HIdden	originOfSources	Origin of Historical Sources	For historical sources, the origin and any rules followed in establishing them as sources		textbox		Sould also be optional	
+HIdden	characteristicOfSources	Characteristic of Sources	Characteristics not already noted elsewhere		textbox			
+HIdden	accessToSources	Documentation and Access to Sources	1) Methods or procedures for accessing data sources and 2) any special permissions needed for access		textbox			
+								
+								
+								
+#controlledVocabulary	ObjectField	Value	displayOrder					
+	artFormType	3D	0					
+	artFormType	Audio	1					
+	artFormType	Collage	2					
+	artFormType	Composition (audio recording)	3					
+	artFormType	Composition (scores)	4					
+	artFormType	Drawing	5					
+	artFormType	Engraving	6					
+	artFormType	Funerary Sculpture	7					
+	artFormType	Image	8					
+	artFormType	Installation	9					
+	artFormType	Mixed media art	10					
+	artFormType	Mural	11					
+	artFormType	Performance (recording)	12					
+	artFormType	Photograph	13					
+	artFormType	Poem	14					
+	artFormType	Poster	15					
+	artFormType	Sculpture	16					
+	artFormType	Song	17					
+	artFormType	Street Art	18					
+	artFormType	Textile art	19					
+	artFormType	Video art (moving image)	20					
+								
+		Drama						
+		Scenography (set design, light design, sound design)						
+		Choreography						
+		Theatre						
+		Musical drama						
+		Dance (contemporary dance, street dance, ballet...etc)						
+		Craft						
+	artFormType	Haptic (Art?)						
+								
+								
+#controlledVocabulary	ObjectField	Value	displayOrder					
+	accessibilityModality	Audio	0					
+	accessibilityModality	Interactive	1	Couldn't interactive and tactile be the same? 				
+	accessibilityModality	Other	2					
+	accessibilityModality	Tactile	3					
+	accessibilityModality	Textual 	4					
+	accessibilityModality	Visual	5					
+	accessibilityModality	Haptic						
+#controlledVocabulary	ObjectField	Value	displayOrder					
+	originalityStatus	Original	0					
+	originalityStatus	Representation	1					
