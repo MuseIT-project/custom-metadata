@@ -2,7 +2,7 @@
 	shMuCustomMetadata		Modality metadata 										
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
 	shMuMedium	Medium	A modality in which the asset is described. 		text	0		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
-	shMuHow		How		A way to experience the asset.		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shMuHow	How	A way to experience the asset.		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
 	shMuArtForm	Art form	The way in which the asset was originally created.		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
 	shMuMedium	Textual	textual	0	0
