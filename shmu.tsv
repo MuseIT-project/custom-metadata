@@ -1,0 +1,40 @@
+#metadataBlock	name	dataverseAlias	displayName												
+	shMuCustomMetadata		Modality metadata 										
+#datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
+	shMuMedium	Medium	A modality in which the asset is described. 		text	0		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shMuHow		How		A way to experience the asset.		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shMuArtForm	Art form	The way in which the asset was originally created.		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder
+	shMuMedium	Textual	textual	0	0
+	shMuMedium	Audio	audio	1	1
+	shMuMedium	Visual	visual	2	2
+	shMuMedium	Tactile	tactile	3	3
+	shMuMedium	Other/Interactive	other	4	4
+	shMuHow	Read	read	0	0
+	shMuHow	Listen	listen	1	1
+	shMuHow	Look	look	2	2
+	shMuHow	Feel	feel	3	3
+	shMuHow	Experience	experience	4	4
+	shMuArtForm	3D	3d	0	0
+	shMuArtForm	Composition(Audio recording)	compositionaudio	1	1
+	shMuArtForm	Composition(Scores)	compositionscores	2	2
+	shMuArtForm	Installation	installation	3	3
+	shMuArtForm	Mixed media art	mixedmediaart	4	4
+	shMuArtForm	Stage Performance	stageperformance	5	5
+	shMuArtForm	Photograph	photograph	6	6
+	shMuArtForm	Poem	poem	7	7
+	shMuArtForm	Sculpture	sculpture	8	8
+	shMuArtForm	Song	song	9	9
+	shMuArtForm	Street Art	streetart	10	10
+	shMuArtForm	Textile Art	textileart	11	11
+	shMuArtForm	Video Art	videoart	12	12
+	shMuArtForm	Drama	drama	13	13
+	shMuArtForm	Scenography	scenography	14	14
+	shMuArtForm	Choreography	choreography	15	15
+	shMuArtForm	Theatre	theatre	16	16
+	shMuArtForm	Musical Drama	musicaldrama	17	17
+	shMuArtForm	Dance	dance	18	18
+	shMuArtForm	Craft	craft	19	19
+	shMuArtForm	Visual arts	visualarts	20	20
+	shMuArtForm	Sculpture	sculpture	21	21
+	shMuArtForm	Other	other	22	22
