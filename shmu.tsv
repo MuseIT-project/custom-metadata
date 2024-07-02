@@ -1,16 +1,16 @@
 #metadataBlock	name	dataverseAlias	displayName												
 	shMuCustomMetadata		Modalities metadata 										
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
-	shMuModalities	Modalities	Modalities in which the asset is described. 		text	0		TRUE	TRUE	TRUE	TRUE	FALSE		shMuCustomMetadata
-	shMuHow	How	A way to experience the asset. 		text	1		TRUE	TRUE	TRUE	TRUE	FALSE		shMuCustomMetadata
-	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	TRUE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shTermURI	Term URI	The URI for the source material	text. 	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shContributorName	Contributor name	The name of the contributor. 	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
-	shContributorType	Contributor type	Type of the contributor. 	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
-	shCopyright	Copyright	The applying copyright. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shOwner	Owner	The owner of the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shConsentInfo	Consent info	The consent information for the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shSubtitle	Subtitle	The subtitle of the work. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shMuModalities	Modalities	Modalities in which the asset is described. 		text	0		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata
+	shMuHow	How	A way to experience the asset. 		text	1		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata
+	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata
+	shTermURI	Term URI	The URI for the source material	text. 	1		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata
+	shContributorName	Contributor name	The name of the contributor. 	1		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata
+	shContributorType	Contributor type	Type of the contributor. 	1		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata
+	shCopyright	Copyright	The applying copyright. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata
+	shOwner	Owner	The owner of the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata
+	shConsentInfo	Consent info	The consent information for the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata
+	shSubtitle	Subtitle	The subtitle of the work. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
 	shMuModalities	Textual	textual	0	0
 	shMuModalities	Audio	audio	1	1
