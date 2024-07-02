@@ -1,7 +1,7 @@
 #metadataBlock	name	dataverseAlias	displayName												
 	shMuCustomMetadata		Modalities metadata 										
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
-	shMuModalities	Modalities	Modalities in which the asset is described. 		text	0		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shMuModalities	Modalities	Modalities in which the asset is described. 		text	0		TRUE	TRUE	TRUE	TRUE	FALSE		shMuCustomMetadata
 	shMuHow	How	A way to experience the asset. 		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
 	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
 	shTermURI	Term URI	The URI for the source material	text. 	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
@@ -12,11 +12,11 @@
 	shConsentInfo	Consent info	The consent information for the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
 	shSubtitle	Subtitle	The subtitle of the work. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
-	shMuMedium	Textual	textual	0	0
-	shMuMedium	Audio	audio	1	1
-	shMuMedium	Visual	visual	2	2
-	shMuMedium	Tactile	tactile	3	3
-	shMuMedium	Other/Interactive	other	4	4
+	shMuModalities	Textual	textual	0	0
+	shMuModalities	Audio	audio	1	1
+	shMuModalities	Visual	visual	2	2
+	shMuModalities	Tactile	tactile	3	3
+	shMuModalities	Other/Interactive	other	4	4
 	shMuHow	Read	read	0	0
 	shMuHow	Listen	listen	1	1
 	shMuHow	Look	look	2	2
