@@ -1,10 +1,16 @@
 #metadataBlock	name	dataverseAlias	displayName												
 	shMuCustomMetadata		Modality metadata 										
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
-	shMuMedium	Media	A modality in which the asset is described. 		text	0		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shMuHow	How	A way to experience the asset. 		text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shMuModalities	Modalities	Modalities in which the asset is described. 		text	0		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shMuHow	How	A way to experience the asset. 		text	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
 	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
-	shTermURI	Term URI	The URI for the source material. 		text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shTermURI	Term URI	The URI for the source material	text. 	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shContributorName	Contributor name	The name of the contributor. 	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shContributorType	Contributor type	Type of the contributor. 	1		TRUE	FALSE	TRUE	TRUE	FALSE		shMuCustomMetadata
+	shCopyright	Copyright	The applying copyright. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shOwner	Owner	The owner of the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shConsentInfo	Consent info	The consent information for the dataset. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
+	shSubtitle	Subtitle	The subtitle of the work. 	text	1		TRUE	FALSE	FALSE	TRUE	FALSE		shMuCustomMetadata
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
 	shMuMedium	Textual	textual	0	0
 	shMuMedium	Audio	audio	1	1
@@ -39,3 +45,33 @@
 	shMuArtForm	Visual arts	visualarts	20	20
 	shMuArtForm	Sculpture	sculpture	21	21
 	shMuArtForm	Other	other	22	22
+	shContributorType	Data collector	1	1
+	shContributorType	Data Curator	2	2
+	shContributorType	Data Manager	3	3
+	shContributorType	Editor	4	4
+	shContributorType	Funder	5	5
+	shContributorType	Hosting Institution	6	6
+	shContributorType	Project Manager	7	7
+	shContributorType	Project Member	8	8
+	shContributorType	Researcher	9	9
+	shContributorType	Research group	10	10
+	shContributorType	Rights Holder	11	11
+	shContributorType	Sponsor/Organiser	12	12
+	shContributorType	Supervisor	13	13
+	shContributorType	WP Leader	14	14
+	shContributorType	Other	15	15
+	shContributorType	Photographer	16	16
+	shContributorType	Graphic artist	17	17
+	shContributorType	Scenographer	18	18
+	shContributorType	Designer	19	19
+	shContributorType	Composer	20	20
+	shContributorType	Conductor	21	21
+	shContributorType	Assistant	22	22
+	shContributorType	Dramaturge	23	23
+	shContributorType	Light designer	24	24
+	shContributorType	Exhibition curator	25	25
+	shContributorType	Director	26	26
+	shContributorType	Dancer	27	27
+	shContributorType	Ensamble	28	28
+	shContributorType	Sound engineer	29	29
+	shContributorType	Other	30	30
