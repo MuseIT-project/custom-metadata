@@ -1,19 +1,19 @@
 #metadataBlock	name	dataverseAlias	displayName													
 	shMuCustomMetadata		Modalities metadata													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	shMuModalities	Modalities	Modalities in which the asset is described.		text	0		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P12548
+	shMuModalities	Modalities	Modalities in which the asset is described.		text	0		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	http://www.wikidata.org/prop/direct/P12548
 	shMuHow	How	A way to experience the asset.		text	1		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q124004604
-	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P7937
-	shTermURI	Term URI	The URI for the source material.		text	3		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P953
-	shContributor	Contributor	Contributor information.		text	4		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P767
-	shContributorName	Contributor name	The name of the contributor.		text	4		TRUE	FALSE	TRUE	TRUE	FALSE		shContributor	shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P767
-	shContributorType	Contributor type	Type of contributor.		text	5		TRUE	TRUE	FALSE	TRUE	FALSE		shContributor	shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P3919
+	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	http://www.wikidata.org/prop/direct/P7937
+	shTermURI	Term URI	The URI for the source material.		text	3		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	http://www.wikidata.org/prop/direct/P953
+	shContributor	Contributor	Contributor information.		text	4		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	http://www.wikidata.org/prop/direct/P767
+	shContributorName	Contributor name	The name of the contributor.		text	4		TRUE	FALSE	TRUE	TRUE	FALSE		shContributor	shMuCustomMetadata	https://www.wikidata.org/wiki/Q20204892
+	shContributorType	Contributor type	Type of contributor.		text	5		TRUE	TRUE	FALSE	TRUE	FALSE		shContributor	shMuCustomMetadata	http://www.wikidata.org/prop/direct/P3919
 	shCopyright	Copyright	The applying copyright.		text	6		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q104832484
 	shOwner	Owner	The owner of the dataset.		text	7		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q29014674
 	shConsentInfo	Consent info	The consent information for the dataset.		text	8		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q231043
 	shSubtitle	Subtitle	The subtitle of the work.		text	9		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q4736562
-	shTopic	Topic	The topic of the work.		text	10		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P921
-	ShTopicName	Topic name	The name of the topic.		text	11		TRUE	FALSE	FALSE	TRUE	FALSE		shTopic	shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P1476
+	shTopic	Topic	The topic of the work.		text	10		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	http://www.wikidata.org/prop/direct/P921
+	ShTopicName	Topic name	The name of the topic.		text	11		TRUE	FALSE	FALSE	TRUE	FALSE		shTopic	shMuCustomMetadata	http://www.wikidata.org/prop/direct/P1476
 	shTopicType	Topic type	The type of topic,		text	12		TRUE	TRUE	FALSE	TRUE	FALSE		shTopic	shMuCustomMetadata	https://www.wikidata.org/wiki/Q132241
 	shDataType	Data type	The data type of the work.		text	17		TRUE	TRUE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q190087
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
