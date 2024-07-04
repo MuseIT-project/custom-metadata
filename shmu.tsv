@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #metadataBlock	name	dataverseAlias	displayName													
 	shMuCustomMetadata		Modalities metadata													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
@@ -75,3 +76,106 @@
 	shContributorType	Ensamble		27	27											
 	shContributorType	Sound engineer		28	28											
 	shContributorType	Other		29	29											
+=======
+#metadataBlock	name	dataverseAlias	displayName													
+	shMuCustomMetadata		Modalities metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	shMuModalities	Modalities	Modalities in which the asset is described.		text	0		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P12548
+	shMuHow	How	A way to experience the asset.		text	1		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q124004604
+	shMuArtForm	Art form	The way in which the asset was originally created.		text	2		TRUE	TRUE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P7937
+	shTermURI	Term URI	The URI for the source material.		text	3		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P953
+	shContributor	Contributor	Contributor information.		text	4		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P767
+	shContributorName	Contributor name	The name of the contributor.		text	4		TRUE	FALSE	TRUE	TRUE	FALSE		shContributor	shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P767
+	shContributorType	Contributor type	Type of contributor.		text	5		TRUE	TRUE	FALSE	TRUE	FALSE		shContributor	shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P3919
+	shCopyright	Copyright	The applying copyright.		text	6		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q104832484
+	shOwner	Owner	The owner of the dataset.		text	7		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q29014674
+	shConsentInfo	Consent info	The consent information for the dataset.		text	8		TRUE	FALSE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q231043
+	shSubtitle	Subtitle	The subtitle of the work.		text	9		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q4736562
+	shTopic	Topic	The topic of the work.		text	10		TRUE	FALSE	TRUE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P921
+	ShTopicName	Topic name	The name of the topic.		text	11		TRUE	FALSE	FALSE	TRUE	FALSE		shTopic	shMuCustomMetadata	https://www.wikidata.org/wiki/Property:P1476
+	shTopicType	Topic type	The type of topic,		text	12		TRUE	TRUE	FALSE	TRUE	FALSE		shTopic	shMuCustomMetadata	https://www.wikidata.org/wiki/Q132241
+	shDataType	Data type	The data type of the work.		text	17		TRUE	TRUE	FALSE	TRUE	FALSE			shMuCustomMetadata	https://www.wikidata.org/wiki/Q190087
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	shMuModalities	Textual	textual	0	0											
+	shMuModalities	Audio	audio	1	1											
+	shMuModalities	Visual	visual	2	2											
+	shMuModalities	Tactile	tactile	3	3											
+	shMuModalities	Other/Interactive	other	4	4											
+	shMuHow	Read	read	0	0											
+	shMuHow	Listen	listen	1	1											
+	shMuHow	Look	look	2	2											
+	shMuHow	Feel	feel	3	3											
+	shMuHow	Experience	experience	4	4											
+	shMuArtForm	3D	3d	0	0											
+	shMuArtForm	Composition(Audio recording)	compositionaudio	1	1											
+	shMuArtForm	Composition(Scores)	compositionscores	2	2											
+	shMuArtForm	Installation	installation	3	3											
+	shMuArtForm	Mixed media art	mixedmediaart	4	4											
+	shMuArtForm	Stage Performance	stageperformance	5	5											
+	shMuArtForm	Photograph	photograph	6	6											
+	shMuArtForm	Poem	poem	7	7											
+	shMuArtForm	Sculpture	sculpture	8	8											
+	shMuArtForm	Song	song	9	9											
+	shMuArtForm	Street Art	streetart	10	10											
+	shMuArtForm	Textile Art	textileart	11	11											
+	shMuArtForm	Video Art	videoart	12	12											
+	shMuArtForm	Drama	drama	13	13											
+	shMuArtForm	Scenography	scenography	14	14											
+	shMuArtForm	Choreography	choreography	15	15											
+	shMuArtForm	Theatre	theatre	16	16											
+	shMuArtForm	Musical Drama	musicaldrama	17	17											
+	shMuArtForm	Dance	dance	18	18											
+	shMuArtForm	Craft	craft	19	19											
+	shMuArtForm	Visual arts	visualarts	20	20											
+	shMuArtForm	Sculpture	sculpture	21	21											
+	shMuArtForm	Other	other	22	22											
+	shContributorType	Data collector	datacollector	0	0											
+	shContributorType	Data Curator	datacurator	1	1											
+	shContributorType	Data Manager	datamanager	2	2											
+	shContributorType	Editor	editor	3	3											
+	shContributorType	Funder	funder	4	4											
+	shContributorType	Hosting Institution	hostinginstitution	5	5											
+	shContributorType	Project Manager	projectmanager	6	6											
+	shContributorType	Project Member	projectmember	7	7											
+	shContributorType	Researcher	researcher	8	8											
+	shContributorType	Research group	researchgroup	9	9											
+	shContributorType	Rights Holder	rightsholder	10	10											
+	shContributorType	Sponsor/Organiser	sponsororganiser	11	11											
+	shContributorType	Supervisor	supervisor	12	12											
+	shContributorType	WP Leader	wpleader	13	13											
+	shContributorType	Other	other	14	14											
+	shContributorType	Photographer	photographer	15	15											
+	shContributorType	Graphic artist	graphicartiest	16	16											
+	shContributorType	Scenographer	scenographer	17	17											
+	shContributorType	Designer	designer	18	18											
+	shContributorType	Composer	composer	19	19											
+	shContributorType	Conductor	conductor	20	20											
+	shContributorType	Assistant	assistant	21	21											
+	shContributorType	Dramaturge	dramaturge	22	22											
+	shContributorType	Light designer	lightdesigner	23	23											
+	shContributorType	Exhibition curator	exhibitioncurator	24	24											
+	shContributorType	Director	director	25	25											
+	shContributorType	Dancer	dancer	26	26											
+	shContributorType	Ensamble	ensamble	27	27											
+	shContributorType	Sound engineer	soundengineer	28	28											
+	shContributorType	Other	other	29	29											
+	shDataType	Manual/Best Practise	manual	0	0											
+	shDataType	Report	report	1	1											
+	shDataType	Scientific article/paper	scientificpaper	2	2											
+	shDataType	Popular science 	popularscience	3	3											
+	shDataType	Thesis/dissertation	thesisdissertation	4	4											
+	shDataType	Clinical/Survey Data 	surveydata	5	5											
+	shDataType	Photo documentation	photodocumentation	6	6											
+	shDataType	Audio documentation	audiodocumentation	7	7											
+	shDataType	Recording of performance/concert	concertperformance	8	8											
+	shDataType	Documentation of project/performance	performancedocumentation	9	9											
+	shDataType	Educational film/trailer 	educationalfilm	10	10											
+	shDataType	Artistic image/photography	artisticimage	11	11											
+	shDataType	Artistic sound 	artisticsound	12	12											
+	shTopicType	Project	project	0	0											
+	shTopicType	Festival	festival	1	1											
+	shTopicType	Conference/Symposium	conferencesymposium	2	2											
+	shTopicType	Concert	concert	3	3											
+	shTopicType	Production	production	4	4											
+	shTopicType	Other	other	5	5											
+>>>>>>> f982311 (Updating to version 12.)
